@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="MazeFrame" fx:id="MazeFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="620.0" style="-fx-background-color: #2D3140;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data.MazeController">
+   <children>
+      <WebView fx:id="browser" prefHeight="300.0" prefWidth="620.0" stylesheets="@../styles/webview.css" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="waveGenerate" layoutX="343.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#waveResult" prefHeight="54.0" prefWidth="141.0" stylesheets="@../styles/wavebut.css" text="Пройти" textFill="#eeeeee" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="label1111111111" layoutX="203.0" layoutY="365.0" text="из лабиринта был использован волно-" textFill="#eeeeee" AnchorPane.bottomAnchor="45.0" AnchorPane.rightAnchor="202.0">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="label111111111" layoutX="203.0" layoutY="347.0" text="ПРИМЕЧАНИЕ. Что бы отыскать выход" textFill="#eeeeee" AnchorPane.bottomAnchor="63.0" AnchorPane.rightAnchor="202.0">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="label11111111111" layoutX="203.0" layoutY="385.0" text="вой алгоритм." textFill="#eeeeee" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="339.0">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="minZoom" fitHeight="33.0" fitWidth="33.0" layoutX="26.0" layoutY="346.0" onMouseClicked="#MinClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="26.0">
+         <image>
+            <Image url="@pic/zoomin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="maxZoom" fitHeight="33.0" fitWidth="33.0" layoutX="59.0" layoutY="346.0" onMouseClicked="#MaxClicked" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="59.0">
+         <image>
+            <Image url="@pic/zoomax.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="listView" cacheShape="false" depthTest="ENABLE" focusTraversable="false" layoutX="418.0" prefHeight="325.0" prefWidth="100.0" scaleShape="false" stylesheets="@../styles/listview.css" visible="false" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-1.0" />
+   </children>
+</AnchorPane>

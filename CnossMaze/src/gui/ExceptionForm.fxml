@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="ErrorFrame" fx:id="MazeFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="157.0" prefWidth="450.0" style="-fx-background-color: #2A2D3B;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data.ExceptionController">
+   <children>
+      <Line endX="350.0" layoutX="100.0" layoutY="120.0" startX="-100.0" stroke="WHITE" />
+      <Line endX="350.0" layoutX="100.0" layoutY="124.0" startX="-100.0" stroke="WHITE" />
+      <Button fx:id="butOK" layoutX="280.0" layoutY="102.0" mnemonicParsing="false" onMouseClicked="#errorStageClose" prefHeight="38.0" prefWidth="141.0" stylesheets="@../styles/mazebut.css" text="ОК" textFill="#eeeeee">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Button>
+      <Circle fill="WHITE" layoutX="61.0" layoutY="60.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#1f93ff00" layoutX="61.0" layoutY="60.0" radius="33.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" />
+      <Label layoutX="55.0" layoutY="31.0" text="!" textFill="#2a2d3b">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="36.0" text="НЕВЕРНЫЙ ВВОД ДАННЫХ" textFill="#eeeeee">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="64.0" text="Введите нечётное число от 9 до 99 !!!" textFill="#eeeeee">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

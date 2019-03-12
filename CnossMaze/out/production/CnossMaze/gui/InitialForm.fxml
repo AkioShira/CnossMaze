@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="MainFrame" fx:id="MainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="620.0" style="-fx-background-color: null;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data.InitialController">
+    <children>
+        <AnchorPane fx:id="MainMenu" prefHeight="300.0" prefWidth="90.0" style="-fx-background-color: #2A2D3B; -fx-border-color: #D1D1D1; -fx-border-radius: 1;">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+                <ImageView fx:id="question" fitHeight="40.0" fitWidth="40.0" layoutX="25.0" layoutY="55.0" onMouseClicked="#infoClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pic/question.png" />
+               </image>
+                </ImageView>
+                <ImageView fx:id="maze" fitHeight="40.0" fitWidth="40.0" layoutX="25.0" layoutY="115.0" onMouseClicked="#mazeClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pic/maze.png" />
+               </image>
+                </ImageView>
+                <ImageView fx:id="setting" fitHeight="40.0" fitWidth="40.0" layoutX="25.0" layoutY="176.0" onMouseClicked="#settingClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pic/setting.png" />
+               </image>
+                </ImageView>
+                <ImageView fx:id="shutdown" fitHeight="40.0" fitWidth="40.0" layoutX="25.0" layoutY="239.0" onMouseClicked="#shutDownClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pic/shutdown.png" />
+               </image>
+                </ImageView>
+                <Pane fx:id="movePanel" onMouseDragged="#onPanelDragged" onMousePressed="#onPanelPressed" prefHeight="54.0" prefWidth="88.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="Info" layoutX="100.0" prefHeight="300.0" prefWidth="520.0" style="-fx-background-color: #2A2D3B; -fx-border-color: #D1D1D1; -fx-border-radius: 1;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Polygon fx:id="res1" fill="#2a2d3b" layoutX="-7.0" layoutY="85.0" rotate="90.0" scaleX="0.15" scaleY="0.15" scaleZ="0.15" stroke="#2a2d3b" strokeType="INSIDE" strokeWidth="6.0" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="-58.0" AnchorPane.topAnchor="24.0">
+                    <points>
+                        <Double fx:value="-50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="-60.0" />
+                    </points>
+                </Polygon>
+                <Pane fx:id="movePanel1" onMouseDragged="#onPanelDragged" onMousePressed="#onPanelPressed" prefHeight="54.0" prefWidth="518.0">
+                    <children>
+                        <Label fx:id="label1" layoutX="190.0" layoutY="18.0" text="О ПРОГРАММЕ" textFill="#eeeeee">
+                            <font>
+                                <Font name="Segoe UI" size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="56.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pic/profile-icon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="label11114" layoutX="53.0" layoutY="217.0" text="CNOSS MAZE" textFill="#424757">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="label11115" layoutX="69.0" layoutY="209.0" text="CNOSS MAZE" textFill="#dadada">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="label111151" layoutX="171.0" layoutY="271.0" text="© Copyright 2017 Shishko Arthur" textFill="#dadada">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="label11116" layoutX="273.0" layoutY="79.0" text="НАЗНАЧЕНИЕ" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label111161" layoutX="274.0" layoutY="183.0" text="РАЗРАБОТАЛ" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label111113" layoutX="274.0" layoutY="99.0" text="Программа разработана в целях" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label111114" layoutX="274.0" layoutY="117.0" text="выполн.  курсового  проекта по" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label1111141" layoutX="274.0" layoutY="135.0" text="технологиям программирования" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label1111131" layoutX="273.0" layoutY="204.0" text="Студент группы СКС-15" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label11111311" layoutX="274.0" layoutY="222.0" text="Шишко А.А." textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            </children></AnchorPane>
+        <AnchorPane fx:id="Maze" layoutX="100.0" prefHeight="300.0" prefWidth="520.0" style="-fx-background-color: #2A2D3B; -fx-border-color: #D1D1D1; -fx-border-radius: 1;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Polygon fx:id="res2" fill="#2a2d3b" layoutX="-7.0" layoutY="145.0" rotate="90.0" scaleX="0.15" scaleY="0.15" scaleZ="0.15" stroke="#2a2d3b" strokeType="INSIDE" strokeWidth="6.0" AnchorPane.bottomAnchor="115.0" AnchorPane.leftAnchor="-58.0" AnchorPane.topAnchor="84.0">
+                    <points>
+                        <Double fx:value="-50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="-60.0" />
+                    </points>
+                </Polygon>
+                <Pane fx:id="movePanel11" onMouseDragged="#onPanelDragged" onMousePressed="#onPanelPressed" prefHeight="54.0" prefWidth="518.0">
+                    <children>
+                        <Label fx:id="label11" layoutX="210.0" layoutY="18.0" text="ЛАБИРИНТ" textFill="#eeeeee">
+                            <font>
+                                <Font name="Segoe UI" size="20.0" />
+                            </font>
+                        </Label>
+                    </children></Pane>
+            <Button fx:id="building" layoutX="343.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#buildhtml" prefHeight="54.0" prefWidth="141.0" stylesheets="@../styles/mazebut.css" text="Сгенерировать" textFill="#eeeeee" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Button>
+            <Pane fx:id="togglepane" layoutX="42.0" layoutY="102.0" prefHeight="96.0" prefWidth="186.0">
+               <children>
+                  <ToggleButton fx:id="set1" layoutX="30.0" mnemonicParsing="false" onMouseClicked="#oneSelect" selected="true" style="-fx-background-color: #2A2D3B;" stylesheets="@../styles/mazebut.css" text="9x9">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="setgroup" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton fx:id="set2" layoutX="129.0" mnemonicParsing="false" onMouseClicked="#twoSelect" style="-fx-background-color: #2A2D3B;" stylesheets="@../styles/mazebut.css" text="15x15" toggleGroup="$setgroup">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="set3" layoutX="15.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#threeSelect" style="-fx-background-color: #2A2D3B;" stylesheets="@../styles/mazebut.css" text="25x25" toggleGroup="$setgroup">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="set4" layoutX="129.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#fourSelect" style="-fx-background-color: #2A2D3B;" stylesheets="@../styles/mazebut.css" text="35x35" toggleGroup="$setgroup">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="set5" layoutX="15.0" layoutY="60.0" mnemonicParsing="false" onMouseClicked="#fiveSelect" style="-fx-background-color: #2A2D3B;" stylesheets="@../styles/mazebut.css" text="45x45" toggleGroup="$setgroup">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="set6" layoutX="129.0" layoutY="60.0" mnemonicParsing="false" onMouseClicked="#sixSelect" style="-fx-background-color: #2A2D3B;" stylesheets="@../styles/mazebut.css" text="55x55" toggleGroup="$setgroup">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </ToggleButton>
+               </children>
+            </Pane>
+            <Label fx:id="label111111111" layoutX="67.0" layoutY="231.0" text="ПРИМЕЧАНИЕ. Что бы сгенерировать лабиринт" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="label1111111111" layoutX="68.0" layoutY="250.0" text="был использован алгоритм Эйлера" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <ToggleButton fx:id="nameSet" layoutX="71.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#selected" selected="true" style="-fx-background-color: #2A2D3B;" stylesheets="@../styles/nameset.css" text="ВЫБРАТЬ РАЗМЕР">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="setgroup1" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="nameSet1" layoutX="307.0" layoutY="67.0" mnemonicParsing="false" onMouseClicked="#selected1" style="-fx-background-color: #2A2D3B;" stylesheets="@../styles/nameset.css" text="ВВЕСТИ САМОМУ" toggleGroup="$setgroup1">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </ToggleButton>
+            <TextField fx:id="setMazeNum" layoutX="330.0" layoutY="123.0" onKeyReleased="#setNumMaze" onMouseClicked="#textfocus" prefHeight="28.0" prefWidth="45.0" style="-fx-background-color: #dddddd;">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="setMazeNum1" layoutX="397.0" layoutY="123.0" onKeyReleased="#setNumMaze1" onMouseClicked="#textfocus" prefHeight="28.0" prefWidth="45.0" style="-fx-background-color: #dddddd;">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="label1111111112" layoutX="382.0" layoutY="128.0" text="X" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="label1111111113" layoutX="289.0" layoutY="169.0" text="Введите нечётное число от 9 до 99" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            </children></AnchorPane>
+        <AnchorPane fx:id="Setting" layoutX="100.0" prefHeight="300.0" prefWidth="520.0" style="-fx-background-color: #2A2D3B; -fx-border-color: #D1D1D1; -fx-border-radius: 1;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane fx:id="movePanel12" onMouseDragged="#onPanelDragged" onMousePressed="#onPanelPressed" prefHeight="54.0" prefWidth="518.0">
+                    <children>
+                        <Label fx:id="label111" layoutX="205.0" layoutY="18.0" text="НАСТРОЙКИ" textFill="#eeeeee">
+                            <font>
+                                <Font name="Segoe UI" size="20.0" />
+                            </font>
+                        </Label>
+                    </children></Pane>
+                <Polygon fx:id="res3" fill="#2a2d3b" layoutX="-7.0" layoutY="207.0" rotate="90.0" scaleX="0.15" scaleY="0.15" scaleZ="0.15" stroke="#2a2d3b" strokeType="INSIDE" strokeWidth="6.0" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="-58.0" AnchorPane.topAnchor="146.0">
+                    <points>
+                        <Double fx:value="-50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="-60.0" />
+                    </points>
+                </Polygon>
+                <Label fx:id="label1111" layoutX="45.0" layoutY="74.0" text="СВЕРНУТЬ" textFill="#eeeeee">
+                    <font>
+                        <Font name="Segoe UI" size="16.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label11111" layoutX="45.0" layoutY="94.0" text="Нажмите что бы свернуть" textFill="#eeeeee">
+                    <font>
+                        <Font name="Segoe UI" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label111111" layoutX="45.0" layoutY="112.0" text="приложение" textFill="#eeeeee">
+                    <font>
+                        <Font name="Segoe UI" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label1111111" layoutX="45.0" layoutY="214.0" text="программу с окна информации" textFill="#eeeeee">
+                    <font>
+                        <Font name="Segoe UI" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label111112" layoutX="45.0" layoutY="196.0" prefHeight="18.0" prefWidth="204.0" text="Нажмите что бы запускать" textAlignment="JUSTIFY" textFill="#eeeeee">
+                    <font>
+                        <Font name="Segoe UI" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label11112" layoutX="45.0" layoutY="176.0" text="ПАРАМЕТРЫ ЗАПУСКА" textFill="#eeeeee">
+                    <font>
+                        <Font name="Segoe UI" size="16.0" />
+                    </font>
+                </Label>
+            <ToggleButton fx:id="disToggleB" focusTraversable="false" layoutX="383.0" layoutY="206.0" minHeight="15.0" minWidth="45.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="45.0" stylesheets="@../styles/toggleb.css" />
+            <Circle fx:id="circleToggle" fill="#eeeeee" layoutX="396.0" layoutY="215.0" radius="13.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Pane fx:id="toggleB" layoutX="377.0" layoutY="194.0" onMousePressed="#parametrs" prefHeight="40.0" prefWidth="58.0" />
+            <Label fx:id="switcher" layoutX="393.0" layoutY="176.0" text="OFF" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="collapse" layoutX="347.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#collapse" prefHeight="54.0" prefWidth="141.0" style="-fx-background-repeat: no-repeat; -fx-background-position: center; -fx-background-size: 30;" stylesheets="@../styles/mazebut.css" text="Свернуть" textFill="#eeeeee">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font></Button>
+            </children></AnchorPane>
+    </children>
+</AnchorPane>

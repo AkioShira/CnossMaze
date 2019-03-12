@@ -1,0 +1,9 @@
+.toggle-button
+{
+    -fx-text-fill: #B3BAD3;
+}
+
+.toggle-button:selected
+{
+    -fx-text-fill: #eeeeee;
+}

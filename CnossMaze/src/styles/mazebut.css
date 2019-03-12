@@ -1,0 +1,30 @@
+.toggle-button
+{
+  -fx-text-fill: #676F91;
+}
+
+.toggle-button:selected
+{
+  -fx-text-fill: #B3BAD3;
+
+}
+.button
+{
+  -fx-background-color: #2A2D3B;
+  -fx-border-color: #eeeeee;
+  -fx-border-radius: 1;
+}
+
+.button:hover
+{
+  -fx-border-color: #eeeeee;
+  -fx-border-radius: 1;
+  -fx-background-color: #34384A;
+}
+
+.button:pressed
+{
+  -fx-border-color: #eeeeee;
+  -fx-border-radius: 1;
+  -fx-background-color: #34384A;
+}

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CnossMaze:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CnossMaze_jar</output-path>
+    <root id="archive" name="CnossMaze.jar">
+      <element id="module-output" name="CnossMaze" />
+    </root>
+  </artifact>
+</component>
