@@ -5,13 +5,13 @@
 ### Дата: <br> 
 26.11.2017 <br>
 ### Скриншоты: <br>
-#### - Окно о программе <br><br>
+####  Окно о программе <br><br>
 ![about](screenshots/about.jpg) <br>
-#### - Выбор размера лабиринта <br><br>
+####  Выбор размера лабиринта <br><br>
 ![about](screenshots/enter.jpg) <br>
-#### - Окно настроек <br><br>
+####  Окно настроек <br><br>
 ![about](screenshots/setting.jpg) <br>
-#### - Сгенерированный лабиринт <br><br>
+####  Сгенерированный лабиринт <br><br>
 ![about](screenshots/generation0.jpg) <br>
-#### - Генерация выхода из лабиринта <br><br>
+####  Генерация выхода из лабиринта <br><br>
 ![about](screenshots/generation1.jpg) <br>
