@@ -3,4 +3,4 @@
 Для генерации лабиринта был использован алгоритм Эйлера. Для нахождения выхода из него был использован волновой алгоритм. </br>
 <h4>Дата:</h4> 26.11.2017
 <h4>Скриншоты:</h4> 
-![alt text](https://github.com/AkioShira/CnossMaze/blob/master/screenshots/about.jpg)
+![Screenshot](screenshots/about.jpg)
