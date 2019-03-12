@@ -5,8 +5,9 @@
 ### Дата: <br> 
 26.11.2017 <br>
 ### Скриншоты: <br>
-Окно о программе <br>
 ![about](screenshots/about.jpg) <br>
+Рисунок 1 - Окно о программе <br>  <br>
+
 Выбор размера лабиринта <br>
 ![about](screenshots/enter.jpg) <br>
 Окно настроек <br>
